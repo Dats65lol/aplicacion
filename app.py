@@ -14,12 +14,15 @@ with tab1:
     fig, ax = plt.subplots(1, 3, figsize=(10,4))
 
     tab_freq = ran['educ'].value_counts().sort_index()
-    ax[0].bar(tab_freq.index, tab_freq.values) #siempre para hacer el grafico de barras necesito una tabla de frecuencia que yo debo crear.
+    ax[0].bar(tab_freq.index, tab_freq.values, color = 'red') #siempre para hacer el grafico de barras necesito una tabla de frecuencia que yo debo crear.
 
-    ax[1].hist(ran['edad'], bins=30)
+    ax[1].hist(ran['edad'], bins=30, color='blue')
 
-    ax[2].hist(ran['wage'], bins=30)
+    ax[2].hist(ran['wage'], bins=30, color='yellow')
 
+    
+
+plt.plot()
     st.pyplot(fig)
 
     fig, ax = plt.subplots(1,2, figsize=(10,4))
