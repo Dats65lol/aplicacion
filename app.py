@@ -20,9 +20,7 @@ with tab1:
 
     ax[2].hist(ran['wage'], bins=30, color='yellow')
 
-    
 
-plt.plot()
     st.pyplot(fig)
 
     fig, ax = plt.subplots(1,2, figsize=(10,4))
