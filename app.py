@@ -25,9 +25,9 @@ with tab1:
 
     fig, ax = plt.subplots(1,2, figsize=(10,4))
 
-    ax[0].scatter(ran['educ'], ran['wage'])
+    ax[0].scatter(ran['educ'], ran['wage'], color='orange')
 
-    ax[1].scatter(ran['edad'], ran['wage'])
+    ax[1].scatter(ran['edad'], ran['wage'], color='black')
 
     st.pyplot(fig)
 
