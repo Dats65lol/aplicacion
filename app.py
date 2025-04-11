@@ -36,5 +36,5 @@ with tab2:
            path=[px.Constant("PGN"),
                  "Nombre Sector",
                  "Tipo de gasto"],
-           values='Valor', color_continuous_scale = 'green') 
+           values='Valor', color='Valor',color_continuous_scale = 'green') 
     st.plotly_chart(fig)
